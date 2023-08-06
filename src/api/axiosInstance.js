@@ -1,5 +1,5 @@
 import axios from "axios";
-
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 export const axiosInstance = axios.create({
-  baseURL: "https://e-commerce-api-v2.academlo.tech/api/v1",
+  baseURL: BACKEND_URL,
 });
